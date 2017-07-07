@@ -29,15 +29,14 @@ Response = OpenStruct.new
 # your response here
 ##
 
-##
-# Instatiate a new Person object using arguments "Dave", 32, and "Ohio".
-# Then, in the next line, change this Person's location property to
-# "Somerville". Finally, assign the modified Person to `Response.dave` below.
+# Instantiate a new Person object using arguments "Dave", 32, and "Ohio".
+# Then change this Person's location property to "Somerville". 
+# Finally, `dave` is assigned to `Response.dave` below.
 
-## replace nil with your response, then continue your work on the next line
-dave = nil
+dave = nil 
+## replace nil with your new Person object using arguments "Dave", 32, and "Ohio"
+## change this Person's location property to "Somerville". 
 Response.dave = dave
-##
 
 ##
 # Create another class called Developer that inherits from Person.
