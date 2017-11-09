@@ -11,12 +11,9 @@ Response = OpenStruct.new
 #
 # For questions which **do** provide a `Response.something =` assignment, you
 # should replace whatever is assigned with your answer. For example, if the
-# answer to a question is the `true` boolean:
+# answer to a question is the `true` boolean, you would write:
 #
-#   ```diff
-#   - Response.wdi_is_awesome = nil
-#   + Response.wdi_is_awesome = true
-#   ```
+#   Response.wdi_is_awesome = true
 ##
 
 ##
