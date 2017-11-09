@@ -11,12 +11,9 @@ Response = OpenStruct.new
 #
 # For questions which **do** provide a `Response.something =` assignment, you
 # should replace whatever is assigned with your answer. For example, if the
-# answer to a question is the `true` boolean:
+# answer to a question is the `true` boolean, you would write:
 #
-#   ```diff
-#   - Response.wdi_is_awesome = nil
-#   + Response.wdi_is_awesome = true
-#   ```
+#   Response.wdi_is_awesome = true
 ##
 
 ##
@@ -30,12 +27,12 @@ Response = OpenStruct.new
 ##
 
 # Instantiate a new Person object using arguments "Dave", 32, and "Ohio".
-# Then change this Person's location property to "Somerville". 
+# Then change this Person's location property to "Somerville".
 # Finally, `dave` is assigned to `Response.dave` below.
 
-dave = nil 
-## replace nil with your new Person object using arguments "Dave", 32, and "Ohio"
-## change this Person's location property to "Somerville". 
+dave = nil
+# replace nil with your new Person object using arguments "Dave", 32, and "Ohio"
+# change this Person's location property to "Somerville".
 Response.dave = dave
 
 ##
@@ -119,7 +116,7 @@ end
 # Fix the 'ComboAttack' class below so that calling
 # `ComboAttack.new.punch.move('left').kick.damage` doesn't cause an error.
 #
-# Then, create a new class method called "get_possible_moves",
+# Then, create a new class method called "possible_moves",
 # which returns the string "kick, move, punch"
 
 # ComboAttack Class definition
@@ -139,6 +136,7 @@ class ComboAttack
 
   def move(direction)
     @moves << "move #{direction}"
+    @damage *= multiplier
   end
 
   def kick
@@ -151,9 +149,9 @@ class ComboAttack
 
   def multiplier
     case moves
-    when `%w`['punch', 'move left', 'kick']
+    when %w[punch move\ left kick]
       1.5
-    when `%w`['kick', 'punch', 'up']
+    when %w[kick punch move\ up]
       2
     else
       1
