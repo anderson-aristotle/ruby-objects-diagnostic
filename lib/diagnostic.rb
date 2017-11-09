@@ -34,8 +34,8 @@ Response = OpenStruct.new
 # Finally, `dave` is assigned to `Response.dave` below.
 
 dave = nil
-## replace nil with your new Person object using arguments "Dave", 32, and "Ohio"
-## change this Person's location property to "Somerville".
+# replace nil with your new Person object using arguments "Dave", 32, and "Ohio"
+# change this Person's location property to "Somerville".
 Response.dave = dave
 
 ##
