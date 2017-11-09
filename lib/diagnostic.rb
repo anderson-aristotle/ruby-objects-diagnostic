@@ -30,12 +30,12 @@ Response = OpenStruct.new
 ##
 
 # Instantiate a new Person object using arguments "Dave", 32, and "Ohio".
-# Then change this Person's location property to "Somerville". 
+# Then change this Person's location property to "Somerville".
 # Finally, `dave` is assigned to `Response.dave` below.
 
-dave = nil 
+dave = nil
 ## replace nil with your new Person object using arguments "Dave", 32, and "Ohio"
-## change this Person's location property to "Somerville". 
+## change this Person's location property to "Somerville".
 Response.dave = dave
 
 ##
@@ -151,9 +151,9 @@ class ComboAttack
 
   def multiplier
     case moves
-    when `%w`['punch', 'move left', 'kick']
+    when %w[punchmove left kick]
       1.5
-    when `%w`['kick', 'punch', 'up']
+    when %w[kick punch up]
       2
     else
       1
