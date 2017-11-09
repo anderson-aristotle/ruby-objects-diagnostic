@@ -136,6 +136,7 @@ class ComboAttack
 
   def move(direction)
     @moves << "move #{direction}"
+    @damage *= multiplier
   end
 
   def kick
@@ -148,9 +149,9 @@ class ComboAttack
 
   def multiplier
     case moves
-    when %w[punchmove left kick]
+    when %w[punch move\ left kick]
       1.5
-    when %w[kick punch up]
+    when %w[kick punch move\ up]
       2
     else
       1
