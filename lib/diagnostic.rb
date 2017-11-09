@@ -116,7 +116,7 @@ end
 # Fix the 'ComboAttack' class below so that calling
 # `ComboAttack.new.punch.move('left').kick.damage` doesn't cause an error.
 #
-# Then, create a new class method called "get_possible_moves",
+# Then, create a new class method called "possible_moves",
 # which returns the string "kick, move, punch"
 
 # ComboAttack Class definition
